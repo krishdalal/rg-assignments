@@ -1,21 +1,5 @@
 
 public class Main {
-    public static class TaxUtil {
-        double rate = 0.15;
-
-        public double calculateTax(double amount) {
-            return amount * rate;
-        }
-    }
-
-    public static class TaxUtilPure {
-        private final double rate = 0.15;
-
-        public double calculateTax(double amount) {
-            return amount * rate;
-        }
-    }
-
     public static void main(String[] args) {
         TaxUtil o = new TaxUtil();
         double amount = 13;
